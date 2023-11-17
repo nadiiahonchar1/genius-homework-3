@@ -157,7 +157,7 @@ p {
   cursor: pointer;
 
   font-family: inherit;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .link-header:hover,
@@ -169,7 +169,7 @@ p {
 
 .header-icon {
   fill: var(--color-primary-dark);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 .header-icon:hover {
   fill: var(--color-primary-accent);
@@ -229,7 +229,7 @@ p {
   border-radius: 32px;
   border: 2px solid var(--color-primary-accent);
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover,
@@ -291,7 +291,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   font-family: inherit;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .link-footer:hover,
@@ -333,12 +333,12 @@ footer p {
   padding: 56px 0;
   background-color: var(--color-primary-dark);
   position: relative;
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .footer-icon {
   fill: var(--color-primary-light);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .footer-icon:hover {
@@ -390,18 +390,39 @@ footer p {
   fill: var(--color-secondary);
   top: 355px;
   left: 140px;
+  animation: rotateAndMove 10s linear infinite;
 }
 
 .star2 {
   fill: var(--color-primary-accent);
   top: 30px;
   right: 0;
+  animation: rotateAndMove 10s linear infinite;
+  animation-delay: 2s;
 }
 
 .star3 {
   fill: var(--color-secondary-light);
   top: 260px;
   right: 40px;
+  animation: rotateAndMove 10s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes rotateAndMove {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg) translateX(100px) rotate(-90deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(100px) rotate(-180deg);
+  }
+  75% {
+    transform: rotate(270deg) translateX(100px) rotate(-270deg);
+  }
 }
 
 .why-us-section-list {
@@ -438,7 +459,7 @@ footer p {
   padding: 0;
   flex-shrink: 0;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s, fill 0.3s;
+  transition: color 0.2s, background-color 0.2s, fill 0.2s;
 }
 
 .carousel-button:hover {
@@ -481,7 +502,7 @@ footer p {
   );
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .our-work-card:hover {
@@ -546,7 +567,7 @@ footer p {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .modal {

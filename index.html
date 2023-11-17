@@ -250,6 +250,8 @@
                     id="user-name"
                     class="form-input"
                     placeholder="Ваше ім'я та прізвище"
+                    pattern="^[А-ЩЬЮЯҐЄIІЇ][а-щьюяґєії']+\s[А-ЩЬЮЯҐЄIІЇ][а-щьюяґєії']+$"
+                    required
                   />
                 </div>
                 <div class="form-field on-contact">
@@ -262,6 +264,8 @@
                     id="user-tel"
                     class="form-input"
                     placeholder="Ваш номер телефону"
+                    pattern="\+380\d{9}"
+                    required
                   />
                 </div>
                 <div class="form-field on-contact">
@@ -274,6 +278,8 @@
                     id="user-email"
                     class="form-input"
                     placeholder="Ваша електронна пошта"
+                    pattern="@"
+                    required
                   />
                 </div>
                 <button type="submit" class="button form-button">
@@ -390,6 +396,8 @@
               id="user-name"
               class="form-input"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^[А-ЩЬЮЯҐЄIІЇ][а-щьюяґєії']+\s[А-ЩЬЮЯҐЄIІЇ][а-щьюяґєії']+$"
+              required
             />
           </div>
           <div class="form-field">
@@ -402,6 +410,8 @@
               id="user-tel"
               class="form-input"
               placeholder="Ваш номер телефону"
+              pattern="\+380\d{9}"
+              required
             />
           </div>
           <div class="form-field">
@@ -414,6 +424,8 @@
               id="user-email"
               class="form-input"
               placeholder="Ваша електронна пошта"
+              pattern="@"
+              required
             />
           </div>
           <button type="submit" class="button form-button">
